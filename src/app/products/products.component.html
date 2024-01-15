@@ -1,0 +1,18 @@
+<div class="row products-component">
+  <div class="col-3 categories-list">
+    <product-filter [category]="category"></product-filter>
+  </div>
+  <div 
+    class="col row row-cols-2 product-list"
+    *ngIf="cart$ | async as cart">
+    <div class="col" *ngFor="let product of filteredProducts">
+      <product-card
+        [product]="product"
+        [shopping-cart]="cart">
+      </product-card>
+    </div>
+  </div>
+</div>
+
+
+

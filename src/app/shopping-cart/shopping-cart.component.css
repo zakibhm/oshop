@@ -1,0 +1,14 @@
+.quantity-component {
+  width: 60%;
+  justify-content: center;
+}
+.btn-clear-cart {
+  float: left;
+}
+
+.thumbnail {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}

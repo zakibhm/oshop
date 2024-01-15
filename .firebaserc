@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "oshop-61f2a": {
+      "hosting": {
+        "oshop": [
+          "oshop-61f2a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "oshop-61f2a"
+  }
+}

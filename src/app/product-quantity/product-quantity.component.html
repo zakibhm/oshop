@@ -1,0 +1,11 @@
+<div class="input-group">
+  <button 
+      (click)="removeFromCart()" 
+      class="btn btn-secondary minus-btn">-</button>
+  <div class="text-center quantity">
+    {{shoppingCart?.getQuantity(product)}} in cart
+  </div>
+  <button 
+    (click)="addToCart()" 
+    class="btn btn-secondary plus-btn">+</button>
+</div>

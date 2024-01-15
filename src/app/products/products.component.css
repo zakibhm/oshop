@@ -1,0 +1,21 @@
+.categories-list {
+  margin-right: 2rem;
+  /* position: fixed;
+  top: 10rem;
+  z-index: 1; */
+}
+
+.product-list {
+  margin-top: 22px;
+}
+
+.product-list .col {
+  min-height: 320px;
+  margin-bottom: 2rem;
+}
+
+.product-list .col product-card {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
