@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@300;400;500;700&display=swap');
+
+$primary: #2db300;
+$hover: #1a8000;
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+}
+
+.list-group-item.active {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+}
+.btn:disabled {
+  background-color: $primary;
+  border-color: $primary;
+}
+.btn-primary:hover {
+  background-color: $hover;
+  border-color: $hover;
+}
+
+.dropdown-toggle::after {
+  color: $primary;
+}
+
+.navbar-nav .dropdown-menu {
+  border: 2px solid $primary;
+  
+}
+.dropdown-item {
+  font-weight: 600;
+}
+.dropdown-toggle.nav-link {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: black;
+}
+.fa-house{
+  color: $primary;
+  scale: 1.5;
+}
+.form-control:focus,
+.form-control:active {
+  border:1px solid $primary; /* Change this to your desired color */
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 72, 0.118); /* Optional: Add a box shadow for emphasis */
+}

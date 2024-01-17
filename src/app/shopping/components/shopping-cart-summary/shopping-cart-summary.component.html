@@ -1,0 +1,34 @@
+<div class="card">
+  <div class="card-body">
+    <div *ngIf="order$ | async as order;else shoppingCart ">
+      <h5 class="card-title fw-bold">Order Placed!</h5>
+      <p class="card-text">
+        <span class="fw-bold">Order Number:</span> {{orderId}}
+      </p>
+      <p class="card-text">
+        <span class="fw-bold">Shipping Date:</span> {{order.datePlaced | date}}
+      </p>
+      <p class="card-text">
+        <span class="fw-bold">Shipping Address:</span> {{order.shipping.name}}, {{order.shipping.addressLine1}}, {{order.shipping.addressLine2}}, {{order.shipping.city}}
+      </p>
+    </div>
+    <ng-template #shoppingCart>
+      <h5 class="card-title fw-bold">Order Summary</h5>
+      <p class="card-text">You have {{cart?.totalItemsCount}} items in your shopping cart.</p>
+      <ul class="list-group list-group-flush">
+        <li *ngFor="let item of cart?.items" class="list-group-item">
+          {{item.quantity}} x {{item.product.title}}
+          <div class="float-end">
+            {{item.totalPrice | currency}}
+          </div>
+        </li>
+        <li class="list-group-item fw-bold">
+          Total Price
+          <div class="float-end">
+            {{cart?.totalPrice | currency}}
+          </div>
+        </li>
+      </ul>
+    </ng-template>
+  </div>
+</div>

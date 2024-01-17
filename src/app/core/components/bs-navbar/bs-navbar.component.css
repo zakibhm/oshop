@@ -1,0 +1,32 @@
+.container-fluid{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+.fa-house {
+  margin-right: 2rem;
+  font-size: 1.3rem;
+}
+
+.fa-cart-shopping {
+  margin-right: 3px;
+  font-size: 1.3rem;
+  transform: translateY(6px);
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.badge {
+  font-size: 0.6rem;
+  transform: translateY(8px);
+}
+
+.fa-right-from-bracket {
+  margin-left: 0.4rem;
+}
